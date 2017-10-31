@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/teacher_info_add_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:indeterminate="false"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/teacher_data_input_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/teacher_data_input_label_text"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <ImageView
+        android:id="@+id/default_teacher_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/teacher" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:id="@+id/teacher_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/teacher_name_label_text" />
+
+    <EditText
+        android:id="@+id/teacher_name_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:id="@+id/teacher_age_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/teacher_age_label_text" />
+
+    <EditText
+        android:id="@+id/teacher_age_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:id="@+id/teacher_highest_edu_qual_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/teacher_highest_edu_qual_label_text" />
+
+    <EditText
+        android:id="@+id/teacher_highest_edu_qual_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_add_teacher_info_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:drawableLeft="@drawable/save_action"
+            android:drawablePadding="20dp"
+            android:text="@string/button_add_teacher_info_action_text" />
+
+        <Button
+            android:id="@+id/button_add_teacher_info_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp"
+            android:drawableLeft="@drawable/cancel_action"
+            android:drawablePadding="20dp"
+            android:text="@string/button_add_teacher_info_cancel_text" />
+    </RelativeLayout>
+
+</LinearLayout>
